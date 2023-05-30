@@ -13,8 +13,11 @@ import { HousingLocation } from '../housinglocation';
       <p class="listing-location">{{ housingLocation.city}}, {{housingLocation.state }}</p>
     </section>
   `,
-  styleUrls: ['./housing-location.component.css']
+  styleUrls: ['./housing-location.component.css'],
 })
+
 export class HousingLocationComponent {
+
   @Input() housingLocation!: HousingLocation;
+
 }
